@@ -5,7 +5,7 @@ cadastros = {}
 
 while True:
     print("---------------------------------")
-    print("GERENCIAMENTO DE RECEITAS")
+    print("    GERENCIAMENTO DE RECEITAS")
     print("---------------------------------")
     print("---------MENU DE OPÇÕES----------")
     print("\n[1] - ADICIONAR RECEITAS")
