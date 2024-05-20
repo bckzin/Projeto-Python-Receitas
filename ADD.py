@@ -42,3 +42,5 @@ def adicionar(cadastros):
             print("Opção inválida, saindo...")
             break 
     return cadastros
+
+print()
