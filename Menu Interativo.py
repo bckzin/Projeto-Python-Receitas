@@ -1,28 +1,24 @@
-import ADD, VISU, ATUA, DEL, ALEA
+import ADD, VISU, ATUA, DEL, ALEA, COM
 
 file = open("BancoDados.txt","a")
 cadastros = {}
 
-
 while True:
-    print("""
-    ---------------------------------
-    Gerenciamento de Receitas
-    ---------------------------------
-
-    OPÇÕES:
-    [1] - ADICIONAR
-    [2] - VISUALIZAR
-    [3] - ATUALIZAR
-    [4] - DELETAR
-    [5] - SALVAR
-    [6] - SAIR
-    [7] - RECEITA ALEATÓRIA
-
-    """)
+    print("---------------------------------")
+    print("GERENCIAMENTO DE RECEITAS")
+    print("---------------------------------")
+    print("---------MENU DE OPÇÕES----------")
+    print("\n[1] - ADICIONAR RECEITAS")
+    print("[2] - VISUALIZAR RECEITAS")
+    print("[3] - ATUALIZAR RECEITAS")
+    print("[4] - DELETAR RECEITAS")
+    print("[5] - SALVAR RECEITAS")
+    print("[6] - RECEITA ALEATÓRIA")
+    print("[7] - COMENTÁRIOS")
+    print("[8] - SAIR")
     while True:
         escolha = int(input("Opção desejada : "))
-        if 1 <= escolha <= 7:
+        if 1 <= escolha <= 8:
             break
 
     if escolha == 1:  #Opção para adicionar uma receita
@@ -42,11 +38,15 @@ while True:
         file.write(str(f"{cadastros}\n"))
         print("Receitas salvas!")
 
-    elif escolha == 6:  #Opção sair do programa
+    elif escolha == 6:  #Opção para receita aleatória
+        ALEA.aleatoria(cadastros)
+
+    elif escolha == 7:  #Opção para adicionar comentário
+        COM.comentario(cadastros)
+
+    elif escolha == 8:  #Opção sair do programa
         file.close()
         exit()
 
-    elif escolha == 7: #Opção para receita aleatória
-        ALEA.aleatoria(cadastros)
     else:
         print("Opção não cadastrada.")
