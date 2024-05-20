@@ -12,5 +12,5 @@ def deletar(cadastros):
                 print("Receita deletada")
     if nome_receita in cadastros:
         del cadastros[nome_receita]
-
+    
     return cadastros
