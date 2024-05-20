@@ -1,0 +1,1 @@
+{'1': {'origem': '1', 'ingredientes': ['1'], 'preparo': ['1']}, '2': {'origem': '1', 'ingredientes': ['1'], 'preparo': ['1']}}{'1': {'origem': '1', 'ingredientes': ['1'], 'preparo': ['1']}, '2': {'origem': '1', 'ingredientes': ['1'], 'preparo': ['1']}}{'1': {'origem': '1', 'ingredientes': ['1'], 'preparo': ['1']}, '2': {'origem': '2', 'ingredientes': ['1'], 'preparo': ['1']}}{}
