@@ -30,13 +30,12 @@ def adicionar(cadastros):
 
             arquivo = open("BancoDados.txt", "a")
             arquivo.write(f"RECEITA : {receita} | ORIGEM : {pais} | INGREDIENTES : {ing} | PREPARO : {prep} | COMENTÁRIOS : {comentarios}\n")
-        elif favoritar == "N":
-            continuar = input("Deseja continuar adicionando receitas [S] ou [N] : ").upper()
 
-            if continuar == "N":
-                arquivo.close()
-                break
-            elif continuar != "S":
-                print("Opção inválida, saindo...")
-                break 
+        continuar = input("Deseja continuar adicionando receitas [S] ou [N] : ").upper()
+        if continuar == "N":
+            arquivo.close()
+            break
+        elif continuar != "S":
+            print("Opção inválida, saindo...")
+            break 
     return cadastros
